@@ -1,5 +1,5 @@
-source $(dirname ${BASH_SOURCE})/../console/print.sh
-source $(dirname ${BASH_SOURCE})/../system/su.sh
+source $(dirname ${BASH_SOURCE})/../term/print.sh
+source $(dirname ${BASH_SOURCE})/../sys/su.sh
 
 uninstall_pkgs() {
 	if command -v apt-get &> /dev/null; then

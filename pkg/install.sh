@@ -1,5 +1,5 @@
-source $(dirname ${BASH_SOURCE})/../console/print.sh
-source $(dirname ${BASH_SOURCE})/../system/su.sh
+source $(dirname ${BASH_SOURCE})/../term/print.sh
+source $(dirname ${BASH_SOURCE})/../sys/su.sh
 
 # Install package <pkg> if the executable <exe> cannot be found in the PATH
 # install_pkg_if_not_found <pkg> <exe>

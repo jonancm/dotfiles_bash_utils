@@ -1,4 +1,4 @@
-source $(dirname ${BASH_SOURCE})/../console/print.sh
+source $(dirname ${BASH_SOURCE})/../term/print.sh
 
 detect_os_family() {
 	uname | tr '[:upper:]' '[:lower:]'

@@ -1,4 +1,4 @@
-source $(dirname ${BASH_SOURCE})/../console/print.sh
+source $(dirname ${BASH_SOURCE})/../term/print.sh
 
 # Run command as privileged (root) user
 # run_privileged <cmd> [<arg> ...]
