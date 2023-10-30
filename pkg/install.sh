@@ -30,6 +30,8 @@ install_pkgs () {
 		run_privileged apt-get install -y $*
 	elif command -v dnf &> /dev/null; then
 		run_privileged dnf install -y $*
+	elif command -v pkg &> /dev/null; then
+		run_privileged pkg install $*
 	elif command -v port &> /dev/null; then
 		run_privileged port -v install $*
 	else

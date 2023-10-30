@@ -8,7 +8,7 @@ detect_os_distro() {
 	case `detect_os_family` in
 		darwin)
 			;;
-		linux)
+		freebsd|linux)
 			grep '^ID=' /etc/os-release | awk '{split($0,a,"="); print(a[2])}'
 			;;
 		*)
@@ -21,7 +21,7 @@ detect_os_version() {
 	case `detect_os_family` in
 		darwin)
 			;;
-		linux)
+		freebsd|linux)
 			grep '^VERSION_ID=' /etc/os-release | awk '{gsub(/"/,""); split($0,a,"="); print a[2]}'
 			;;
 		*)
